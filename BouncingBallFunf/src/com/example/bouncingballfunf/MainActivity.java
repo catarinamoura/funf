@@ -13,15 +13,18 @@ import android.os.Build;
 
 public class MainActivity extends ActionBarActivity {
 
+	AnimationView animationView;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		if (savedInstanceState == null) {
+		/*if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
-		}
+		}*/
+	
+		animationView = (AnimationView)findViewById(R.id.animationView);
 	}
 
 	@Override
